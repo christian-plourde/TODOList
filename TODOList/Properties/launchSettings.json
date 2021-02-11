@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TODOList": {
+      "commandName": "Project",
+      "commandLineArgs": "--show"
+    }
+  }
+}
