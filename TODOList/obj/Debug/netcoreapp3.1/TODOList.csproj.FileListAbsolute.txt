@@ -12,3 +12,4 @@ C:\Users\christian\Documents\Projects\TODOList\TODOList\bin\Debug\netcoreapp3.1\
 C:\Users\christian\Documents\Projects\TODOList\TODOList\bin\Debug\netcoreapp3.1\TODO.pdb
 C:\Users\christian\Documents\Projects\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODO.dll
 C:\Users\christian\Documents\Projects\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODO.pdb
+C:\Users\christian\Documents\Projects\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.csprojAssemblyReference.cache

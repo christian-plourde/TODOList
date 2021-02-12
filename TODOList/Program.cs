@@ -65,7 +65,7 @@ namespace TODOList
             {
                 //try to load the to do list
                 //if we fail, then we should create the file.
-                todo_list = JObject.Parse(File.ReadAllText("todo_list.json"));
+                todo_list = JObject.Parse(File.ReadAllText(Path.Combine(Assembly.GetExecutingAssembly().Location, "todo_list.json")));
             }
 
             catch
@@ -76,7 +76,7 @@ namespace TODOList
                     todo_list.Add("user", null);
                     todo_list.Add("tasks", new JArray());
 
-                    using (StreamWriter writer = new StreamWriter("todo_list.json"))
+                    using (StreamWriter writer = new StreamWriter(Path.Combine(Assembly.GetExecutingAssembly().Location, "todo_list.json")))
                     {
                         writer.Write(todo_list.ToString());
                     }
@@ -185,7 +185,7 @@ namespace TODOList
                 }
                 todo_list["tasks"] = ta;
 
-                using (StreamWriter w = new StreamWriter("todo_list.json"))
+                using (StreamWriter w = new StreamWriter(Path.Combine(Assembly.GetExecutingAssembly().Location, "todo_list.json")))
                 {
                     w.Write(todo_list.ToString());
                 }
